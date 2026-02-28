@@ -107,17 +107,17 @@ img {
 }
 
 .hero {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cb/Bunny_Chow_Close_Up.JPG");
+  background-image: url("images/kota1.jpg");
 }
 
 .menu-hero {
   min-height: 52vh;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/ca/Bunny_Chow_with_Lamb_%26_Potato_-_African_Chow_2023-07-27.jpg");
+  background-image: url("images/kota1.jpg");
 }
 
 .contact-hero {
   min-height: 48vh;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cb/Bunny_Chow_Close_Up.JPG");
+  background-image: url("images/kota1.jpg");
 }
 
 .hero-parallax {
@@ -292,10 +292,30 @@ p {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(220px, 0.8fr) 1.2fr;
   align-items: center;
-  gap: 1rem;
-  padding: 1.1rem;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.about-logo-wrap {
+  background: #111;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  min-height: 240px;
+  display: grid;
+  place-items: center;
+}
+
+.about-logo-wrap img {
+  width: min(260px, 100%);
+  height: auto;
+  object-fit: contain;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
 }
 
 .about-image-wrap {
@@ -603,3 +623,4 @@ p {
     background-attachment: scroll;
   }
 }
+
